@@ -1,7 +1,13 @@
 aid: ellis
 name: Ellis
-description: Ellis is a company surfaced as a portfolio company of kindred-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Ellis is a modern business immigration platform and law firm that helps company People
+  and HR teams secure U.S. work visas and green cards for skilled talent. The platform combines
+  licensed immigration attorneys with software for centralized case management, document storage,
+  status tracking, and program analytics, covering employment-based visas (H-1B, TN, O-1, L-1, J-1,
+  E-1/E-2, E-3), green cards (EB-1A, EB-2 NIW, EB-2/EB-3 PERM), and naturalization. Ellis is a
+  Kindred Ventures portfolio company. This API Evangelist profile was enriched from the company's
+  public web surface; Ellis publishes no public API, developer portal, or machine-readable
+  artifacts at this time.
 url: https://raw.githubusercontent.com/api-evangelist/ellis/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +15,30 @@ x-backed-by:
 - kindred-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.ellis.com/images/opengraph.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Immigration
+- Legal Tech
+- Visas
+- Green Cards
+- Human Resources
+- Compliance
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ellis-domain-security.yml
 - type: Website
-  url: https://joinellis.com/
+  url: https://www.ellis.com/
+- type: Pricing
+  url: https://www.ellis.com/pricing
+- type: Blog
+  url: https://www.ellis.com/resources
+- type: Login
+  url: https://app.ellis.com/login
+- type: TermsOfService
+  url: https://www.ellis.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.ellis.com/privacy-policy
+- type: About
+  url: https://www.ellis.com/about
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
